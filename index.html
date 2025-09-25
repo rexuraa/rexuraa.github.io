@@ -1,222 +1,239 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-  <meta charset="UTF-8" />  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-  <title>rexuraa</title>  
-  <link rel="preconnect" href="https://fonts.googleapis.com">  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">  
-  <style>  
-    body {  
-      margin: 0;  
-      font-family: 'Fira Code', monospace;  
-      color: #e0e0e0;  
-      text-align: center;  
-      background: url('https://raw.githubusercontent.com/rexuraa/ninja.image/refs/heads/main/20250419_144237.png') center center / cover no-repeat fixed;  
-    }  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>rexuraa</title>
+  <meta name="description" content="Rajin — student, aspiring programmer, anime & music enthusiast. Welcome to my little world.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
-    header {  
-      padding: 0.1rem;  
-      margin:5px;
-    } 
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      color: #e0e0e0;
+      text-align: center;
+      background: url('https://raw.githubusercontent.com/rexuraa/ninja.image/refs/heads/main/20250419_144237.png') center center / cover no-repeat fixed;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      padding: 0.1rem;
+      margin: 5px;
+    }
+
     @keyframes glowLoop {
-  30% {
-    text-shadow: 0 0 0px #737373, 0 0 5px #737373;
-  }
-}
+      30% {
+        text-shadow: 0 0 0px #737373, 0 0 5px #737373;
+      }
+    }
 
-.hero-name {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #737373;
-  font-family: 'Fira Code', monospace;
-  letter-spacing: 5px;
-  margin-bottom: 0.1rem;
-  animation: glowLoop 2.5s infinite ease-in-out;
-}
-     .typing-banner {  
-      display: flex;  
-      justify-content: center;  
-      align-items: center;  
+    .hero-name {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #737373;
+      font-family: 'Fira Code', monospace;
+      letter-spacing: 5px;
+      margin-bottom: 0.1rem;
+      animation: glowLoop 2.5s infinite ease-in-out;
+    }
+
+    .typing-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 2rem 0;
-    }  
+    }
 
-    .typing-banner img {  
-      height: 50px;  
-      max-width: 97%;  
-      display: block;  
-      margin: 0 auto;  
-    }  
+    .typing-banner img {
+      height: 50px;
+      max-width: 97%;
+      display: block;
+      margin: 0 auto;
+    }
 
-    h2 {  
-      font-size: 30px;  
-      font-weight: bold;  
-      margin: 3rem 0;  
-    }  
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 3rem 0 1rem 0;
+    }
 
-    p {  
-      font-size: 14px;  
-      line-height: 1.6;  
-      margin: 0.5rem 0;  
-    }  
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
 
-    section {  
-      padding: 1rem 0.8rem;  
-    }  
+    section {
+      padding: 1rem 0.8rem;
+    }
 
-    .badges a {  
-      margin: 0.1rem;  
-      display: inline-block;  
-    }  
+    .badges a {
+      margin: 0.1rem;
+      display: inline-block;
+    }
 
-    .badges a img {  
-      height: 70px;  
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;  
-      border-radius: 14px;  
-      padding: 4px 8px;  
-      box-shadow: 0 0 12px rgba(139, 233, 253, 0.3);  
-      filter: grayscale(100%) brightness(90%);  
-      background-color: transparent;  
-    }  
+    .badges a img {
+      height: 70px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+      border-radius: 14px;
+      padding: 4px 8px;
+      box-shadow: 0 0 12px rgba(139, 233, 253, 0.3);
+      filter: grayscale(100%) brightness(90%);
+      background-color: transparent;
+    }
 
-    .badges a img:hover {  
-      transform: scale(1.1);  
-      box-shadow: 0 0 16px rgba(139, 233, 253, 0.6);  
-      filter: none;  
-    }  
+    .badges a img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 16px rgba(139, 233, 253, 0.6);
+      filter: none;
+    }
 
-    .footer {  
-      font-style: Arial;  
-      padding-bottom: 1.5rem;  
-      color: #aaa;  
-    }  
+    .quote {
+      color: #aaa;
+      font-size: 15px;
+    }
 
-    code {  
-      color: #8be9fd;  
-      font-size: 20px;  
-    }  
+    code {
+      color: #8be9fd;
+      font-size: 20px;
+    }
 
-    footer {  
-      margin-top: 3rem;  
-      color: gray;  
-    }  
+    footer {
+      margin-top: 3rem;
+      color: gray;
+    }
 
-    .music-control {  
-      position: fixed;  
-      bottom: 20px;  
-      right: 20px;  
-      z-index: 1000;  
-    }  
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
 
-    .play-button {  
-      width: 60px;  
-      height: 60px;  
-      border-radius: 50%;  
-      background-color: rgba(25, 25, 25, 0.7);  
-      border: 2px solid #444;  
-      color: #737373FF;  
-      font-size: 26px;  
-      cursor: pointer;  
-      transition: 0.3s ease;  
-      box-shadow: 0 0 10px rgba(139, 233, 253, 0.15);  
-      backdrop-filter: blur(3px);  
-    }  
+    .play-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: rgba(25, 25, 25, 0.7);
+      border: 2px solid #444;
+      color: #737373FF;
+      font-size: 26px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(139, 233, 253, 0.15);
+      backdrop-filter: blur(3px);
+    }
 
-    .play-button:hover {  
-      background-color: rgba(30, 30, 30, 0.85);  
-      transform: scale(1.05);  
-      box-shadow: 0 0 16px rgba(139, 233, 253, 0.3);  
-    }  
-  </style>  
-</head>  
-<body>  
-  <div class="music-control">  
-    <button class="play-button" onclick="toggleMusic()">▶️</button>  
-    <audio id="background-music" loop>  
-      <source src="https://raw.githubusercontent.com/rexuraa/Music.portfolio/main/rexuraa.mp3" type="audio/mp3" />  
-      Your browser does not support the audio element.  
-    </audio>  
-  </div>  
+    .play-button:hover {
+      background-color: rgba(30, 30, 30, 0.85);
+      transform: scale(1.05);
+      box-shadow: 0 0 16px rgba(139, 233, 253, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- Music Control -->
+  <div class="music-control">
+    <button class="play-button" onclick="toggleMusic()">▶️</button>
+    <audio id="background-music" loop>
+      <source src="https://raw.githubusercontent.com/rexuraa/Music.portfolio/main/rexuraa.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
-  <header> 
-    <div class="typing-banner">  
+  <header class="container">
+    <div class="typing-banner">
       <img 
         src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=48&pause=2000&color=737373&center=true&vCenter=true&width=870&lines=ᴇɴᴛᴇʀɪɴɢ ᴛʜᴇ ʀᴇᴀʟᴍ ᴏꜰ ʀᴇ𝙭ᴜʀᴀᴀ;&repeat=false" 
         alt="Typing SVG" 
         loading="lazy"
       />
     </div>
- <div class="hero-name">< R A J I N >
- </div>
-
- <div class="typing-banner">  
+    <h1 class="hero-name">&lt; R A J I N &gt;</h1>
+    <div class="typing-banner">
       <img 
         src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&pause=1000&color=737373&center=true&vCenter=true&width=750&lines=Student;+Bangladeshi;Muslim;+Explore+my+little+world;&loop=false" 
         alt="Typing SVG" 
         loading="lazy"
       />
-    </div>  
-  </header>  
+    </div>
+  </header>
 
-  <section>  
-    <h2> About me </h2>  
-    <ul style="list-style: none; padding: 0;">  
-      <li>Hey there! I'm someone who enjoys the quiet moments, whether it's diving into anime, exploring music, or just traveling to new places (even if it's just in my mind). Nighttime is when I feel most alive, and I love reflecting on life in those still hours. I'm passionate about learning new things and embracing simplicity.
+  <main class="container">
+    <section>
+      <h2>About me</h2>
+      <p>
+        Hey there! I'm someone who enjoys the quiet moments, whether it's diving into anime, exploring music, or just traveling to new places (even if it's just in my mind).
+        Nighttime is when I feel most alive, and I love reflecting on life in those still hours. I'm passionate about learning new things and embracing simplicity.
+        </p>
+        <p>
+        I'm also an aspiring programmer. I enjoy writing code just for fun, and I'm still learning every day. As a student, I try to make the most of my free time by exploring different paths.
+        I have many dreams, and I'm working hard to achieve my goals. Please keep me in your prayers so that one day I can become a successful person.
+      </p>
+    </section>
 
-I'm also an aspiring programmer. I enjoy writing code just for fun, and I'm still learning every day. As a student, I try to make the most of my free time by exploring different paths. I have many dreams, and I'm working hard to achieve my goals. Please keep me in your prayers so that one day I can become a successful person.</li>  
-    </ul>  
-  </section>  
+    <section class="quote">
+      <p>"Still learning… and forgetting… and relearning"</p>
+      <p>(repeat loop)</p>
+    </section>
 
-  <section class="footer">  
-    <p>"Still learning… and forgetting… and relearning"</p>  
-    <p>(repeat loop)</p>  
-  </section>  
+    <section>
+      <h2>🌐 Connect with Me</h2>
+      <div class="badges">
+        <a href="https://facebook.com/rvzxon" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Facebook-111111?style=for-the-badge&logo=facebook&logoColor=8BE9FD" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com/rexuraa" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Instagram-111111?style=for-the-badge&logo=instagram&logoColor=8BE9FD" alt="Instagram" />
+        </a>
+        <a href="https://t.me/rexuraa" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Telegram-111111?style=for-the-badge&logo=telegram&logoColor=8BE9FD" alt="Telegram" />
+        </a>
+        <a href="https://github.com/rexuraa" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=8BE9FD" alt="GitHub" />
+        </a>
+        <a href="https://youtube.com/@rexuraa" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/YouTube-111111?style=for-the-badge&logo=youtube&logoColor=8BE9FD" alt="YouTube" />
+        </a>
+        <a href="https://x.com/_rexuraa_" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Twitter-111111?style=for-the-badge&logo=x&logoColor=8BE9FD" alt="Twitter" />
+        </a>
+      </div>
+    </section>
 
-  <section>  
-    <h2>🌐 Connect with Me</h2>  
-    <div class="badges">  
-      <a href="https://facebook.com/rvzxon" target="_blank">  
-        <img src="https://img.shields.io/badge/Facebook-111111?style=for-the-badge&logo=facebook&logoColor=8BE9FD" alt="Facebook" />  
-      </a>  
-      <a href="https://instagram.com/rexuraa" target="_blank">  
-        <img src="https://img.shields.io/badge/Instagram-111111?style=for-the-badge&logo=instagram&logoColor=8BE9FD" alt="Instagram" />  
-      </a>  
-      <a href="https://t.me/rexuraa" target="_blank">  
-        <img src="https://img.shields.io/badge/Telegram-111111?style=for-the-badge&logo=telegram&logoColor=8BE9FD" alt="Telegram" />  
-      </a>  
-      <a href="https://github.com/rexuraa" target="_blank">  
-        <img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=8BE9FD" alt="GitHub" />  
-      </a>  
-      <a href="https://youtube.com/@rexura.official" target="_blank">  
-        <img src="https://img.shields.io/badge/YouTube-111111?style=for-the-badge&logo=youtube&logoColor=8BE9FD" alt="YouTube" />  
-      </a>  
-      <a href="https://x.com/_rexuraa_" target="_blank">  
-  <img src="https://img.shields.io/badge/Twitter-111111?style=for-the-badge&logo=x&logoColor=8BE9FD" alt="Twitter" />  
-      </a>
-    </div>  
-  </section>  
+    <p style="font-size: 1rem; color: #737373FF; font-weight: bold;">Thanks for visiting my little world</p>
+    <p style="font-size: 1rem; color: #737373FF; font-weight: bold;">See you again</p>
+  </main>
 
-  <p style="font-size: 1rem; color: #737373FF; font-weight: bold;">Thanks for visiting my little world</p>  
-  <p style="font-size: 1rem; color: #737373FF; font-weight: bold;">See you again</p>  
+  <footer>
+    <p>&copy; <span id="year"></span> Rajin • Made with ʀᴇ𝙭ᴜʀᴀᴀ</p>
+  </footer>
 
-  <footer>  
-    <p>&copy; 2025 Rajin • Made with ʀᴇ𝙭ᴜʀᴀᴀ</p>  
-  </footer>  
+  <script>
+    const music = document.getElementById('background-music');
+    const button = document.querySelector('.play-button');
 
-  <script>  
-    const music = document.getElementById('background-music');  
-    const button = document.querySelector('.play-button');  
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        button.textContent = "❚❚";
+      } else {
+        music.pause();
+        button.textContent = "▶️";
+      }
+    }
 
-    function toggleMusic() {  
-      if (music.paused) {  
-        music.play();  
-        button.textContent = "❚❚";  
-      } else {  
-        music.pause();  
-        button.textContent = "▶️";  
-      }  
-    }  
-  </script>  
-</body>  
-</html>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
